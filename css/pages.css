@@ -5,15 +5,19 @@
 .personal_main_block{width:100%;height:873px;display:block;}
 .personal_main_pic{width:auto;height:873px;float:left;margin-right: 20px;}
 .personal_main_info{width:auto;height:873px;float:left;}
-.personal_main_info>.title{width:100%;height:auto;display:block; margin-bottom: 100px;}
+.personal_main_info>.title{width:100%;height:auto;display:block; margin-bottom: 50px;}
 .personal_main_info>.title>.job{width:100%;height:auto;font-size:20px;color:#919191;display:block;margin-bottom:10px;}
 .personal_main_info>.title>.name{width:100%;height:auto;font-size:30px;color:black;display:block;}
 .personal_main_info>.skill{width:100%;height:auto;display:block;margin-bottom: 30px;}
 .info-sign{width:55px;height:26px;text-align:center;line-height:26px;color:white;font-size:18px;background:black;margin-bottom:8px;}
 .personal_main_info>.skill>.detail{width:100%;height:auto;display:block;font-size:18px;color:#919191;margin-bottom:5px;}
-.personal_main_info>.experience{width:100%;height:auto;display:block;}
+.personal_main_info>.experience{width:100%;height:600px;display:block;overflow:scroll;}
 .personal_main_info>.experience>.detail{width:100%;height:auto;display:block;color:#919191;margin-bottom:5px;}
 /*personal-info*/
+
+/*圖文編輯區*/
+.edit{margin-top:50px;}
+/*圖文編輯區*/
 
 /*personal-works*/
 .personal_works_block{width:454px;height:38px;display:block;margin:0 auto;margin-bottom: 50px;}

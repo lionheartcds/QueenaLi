@@ -27,6 +27,8 @@ img{width:auto;height:auto;}
 .header-drop-menu_block{width:70px;height:auto;margin:0 auto;position:absolute;margin-left:105px;}
 .header-drop-menu{width:100%;height:30px;float:left;border-bottom:1px solid white;color:white;line-height:30px;text-decoration:none;}
 .scrolled {width:100%;height:130px; background:black;position: fixed;left: 0;top:-120px;}
+.heder-logo-word{float:left;display:none;position:absolute;}
+.heder-logo-word>img{height:20px;}
 /*header*/
 
 /*Banner*/
