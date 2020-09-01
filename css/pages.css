@@ -3,7 +3,7 @@
 /*personal-info*/
 .personal_block{width:100%;height:auto;display:block;margin:50px 0 30px 0;}
 .personal_main_block{width:100%;height:873px;display:block;}
-.personal_main_pic{width:auto;height:873px;float:left;margin-right: 20px;}
+.personal_main_pic{width:100%;height:auto;float:left;margin-right: 20px;}
 .personal_main_info{width:auto;height:873px;float:left;}
 .personal_main_info>.title{width:100%;height:auto;display:block; margin-bottom: 50px;}
 .personal_main_info>.title>.job{width:100%;height:auto;font-size:20px;color:#919191;display:block;margin-bottom:10px;}
@@ -87,15 +87,121 @@
 .price_menu_block>div>a:nth-last-child(1){margin-right:0px;}
 .price_main_block{width:100%;height:auto;float:left;}
 .price_main_block>div{width:auto;height:auto;display:block;margin:0 auto;}
-.price_main_block>div>div{width:285px;height:375px;float:left;margin-right:97px;background:url("../img/price-block.png") no-repeat;padding:25px 25px 0 25px;}
+.price_main_block>div>div{width:285px;height:375px;float:left;margin-right:97px;background:url("../img/price-block.png") no-repeat;padding:25px 25px 0 25px;background-size:cover;}
 .price_main_block>div>div:nth-last-child(1){margin-right:0px;}
 .price_main_title{width:100%;height:auto;font-size:30px;display:block;text-align:center;line-height:30px;margin-bottom:10px;}
 .price_main_title>div{font-size:30px;}
 .price_main_title>span{font-size:20px;}
-.price_area{width:280px;height:34px;background:black;text-align:center;line-height:34px;font-size:18px;color:white;margin-bottom:10px;}
+.price_area{width:100%;height:34px;background:black;text-align:center;line-height:34px;font-size:18px;color:white;margin-bottom:10px;}
 .price_area_tag{width:100%;height:auto;display:block;margin-bottom:10px;color:black;text-align:center;}
 .price_area_tag.last{margin-bottom:25px;}
 .price_btn{width:175px;height:37px;display:block;margin:0 auto;position:relative;bottom:0px;margin-top:-7px; background:black;color:white;text-align:center;line-height:37px;font-weight:bolder;text-decoration:none;transition:all 0.3s;}
 .price_btn:hover{color:#a1a1a1;}
 .price_notice{width:100%;height:auto;float:left;margin-top:70px;text-align:left;line-height:25px;}
 /*price*/
+
+/*RWD 設定*/
+
+	/*ipad pro media*/
+@media screen and  (min-width: 1024px) and (max-width: 1199px) {
+	img{width:100%;height:auto!important;}
+	/*Price*/
+	.price_main_block>div>div{width:240px; height:417px;float:left;background:url("../img/price-block-pad.png") no-repeat;background-size:cover;padding-top:20px;margin-right:10px;font-size:18px;margin-top:20px;}
+	.price_menu_block>div{width:90%;height:60px;display:block;margin:0 auto;}
+	.price_area{height:35px; font-size:18px;line-height:35px;}
+	.price_btn{height:35px;line-height:35px;margin-top:20px;}
+	.price_menu_block>div>a {min-width:100%;margin:0;font-size:25px;float:none;display:block;margin-bottom:20px;padding:0;}
+	.price_notice{width: 100%;height: auto;float: left;margin-top: 70px;text-align: left;line-height: 35px;}
+	/*Price*/
+	
+}
+	/*ipad pro media*/
+
+	/*Ipad media*/
+@media screen and  (min-width: 768px) and (max-width: 1023px) {
+	img{width:100%;height:auto!important;}
+	/*Works*/
+	.grid .grid__item,
+	.grid .grid__sizer{width:calc(33% - 20px);margin: 0 10px 20px;}
+	/*Works*/
+	
+	/*Price*/
+	.price_main_block>div>div{height:435px;float:left;background:url("../img/price-block-pad.png") no-repeat;background-size:cover;padding-top:70px;margin-right:10px;font-size:18px;margin-top:20px;}
+	.price_menu_block>div{width:90%;height:60px;display:block;margin:0 auto;}
+	.price_area{height:35px; font-size:18px;line-height:35px;}
+	.price_btn{height:35px;line-height:35px;margin-top:50px;}
+	.price_menu_block>div>a {min-width:100%;margin:0;font-size:25px;float:none;display:block;margin-bottom:20px;padding:0;}
+	.price_notice{width: 100%;height: auto;float: left;margin-top: 70px;text-align: left;line-height: 35px;}
+	/*Price*/
+	
+}
+	/*Ipad media*/
+
+	/*大手機 media*/
+@media screen and  (min-width: 414px) and (max-width: 767px) {
+	body{font-size:25px!important;}
+	img{width:100%;height:auto!important;}
+	/*Works*/
+	.personal_works_block{width:100%;height:100px;}
+	.personal_works_block>a{width:calc(50% - 10px);height:50px;float:left;background:rgba(0,0,0,0.7);margin:0 5px;margin-bottom:10px; color:white;text-decoration:none;text-align:center;line-height:50px;font-weight:bolder;}
+	.grid .grid__item,
+	.grid .grid__sizer{width:calc(50% - 20px);margin: 0 10px 20px;}
+	/*Works*/
+	
+	/*Price*/
+	.price_main_block>div>div{height:555px;float:left;background:url("../img/price-block-mobile.png") no-repeat;background-size:cover;position:relative;transform:translateX(-50%);left: 50%;margin:20px 0;padding-top:70px;}
+	.price_menu_block>div{width:90%;height:60px;display:block;margin:0 auto;}
+	.price_area{height:45px; font-size:25px;line-height:45px;}
+	.price_btn{height:45px;line-height:45px;margin-top:50px;}
+	.price_menu_block>div>a {min-width:100%;margin:0;font-size:25px;float:none;display:block;margin-bottom:20px;padding:0;}
+	.price_notice{width: 100%;height: auto;float: left;margin-top: 70px;text-align: left;line-height: 35px;}
+	/*Price*/
+	
+	
+}
+	/*大手機 media*/
+
+	/*常規手機 media*/
+	@media screen and  (min-width: 375px) and (max-width:413px) {
+	body{font-size:25px!important;}
+	img{width:100%;height:auto!important;}
+	/*Works*/
+	.personal_works_block{width:100%;height:100px;}
+	.personal_works_block>a{width:calc(50% - 10px);height:50px;float:left;background:rgba(0,0,0,0.7);margin:0 5px;margin-bottom:10px; color:white;text-decoration:none;text-align:center;line-height:50px;font-weight:bolder;}
+	.grid .grid__item,
+	.grid .grid__sizer{width:calc(100% - 20px);margin: 0 10px 20px;}
+	/*Works*/
+	
+	/*Price*/
+	.price_main_block>div>div{height:555px;float:left;background:url("../img/price-block-mobile.png") no-repeat;background-size:cover;position:relative;transform:translateX(-50%);left: 50%;margin:20px 0;padding-top:70px;}
+	.price_menu_block>div{width:90%;height:60px;display:block;margin:0 auto;}
+	.price_area{height:45px; font-size:25px;line-height:45px;}
+	.price_btn{height:45px;line-height:45px;margin-top:50px;}
+	.price_menu_block>div>a {min-width:100%;margin:0;font-size:25px;float:none;display:block;margin-bottom:20px;padding:0;}
+	.price_notice{width: 100%;height: auto;float: left;margin-top: 70px;text-align: left;line-height: 35px;}
+	/*Price*/
+}
+	/*常規手機 media*/
+
+	/*小手機 media*/
+	@media screen and (max-width:374px) {
+	body{font-size:25px!important;}
+	img{width:100%;height:auto!important;}
+	/*Works*/
+	.personal_works_block{width:100%;height:100px;}
+	.personal_works_block>a{width:calc(50% - 10px);height:50px;float:left;background:rgba(0,0,0,0.7);margin:0 5px;margin-bottom:10px; color:white;text-decoration:none;text-align:center;line-height:50px;font-weight:bolder;}
+	.grid .grid__item,
+	.grid .grid__sizer{width:calc(100% - 20px);margin: 0 10px 20px;}
+	/*Works*/
+	
+	/*Price*/
+	.price_main_block>div>div{width:280px height:526px;float:left;background:url("../img/price-block-mobile.png") no-repeat;background-size:cover;margin:20px 0;padding:40px 20px;}
+	.price_menu_block>div{width:90%;height:60px;display:block;margin:0 auto;}
+	.price_area{height:45px; font-size:25px;line-height:45px;}
+	.price_btn{height:45px;line-height:45px;margin-top:50px;}
+	.price_menu_block>div>a {width:100%;;margin:0;;font-size:25px;float:none;display:block;margin-bottom:20px;padding:0;}
+	.price_notice{width: 100%;height: auto;float: left;margin-top: 70px;text-align: left;line-height: 35px;}
+	/*Price*/
+}
+	/*小規手機 media*/
+/*RWD 設定*/

@@ -1,7 +1,9 @@
 <!doctype html>
-<html>
+<html lang="zh">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 <title>QUEENA LI STUDIO</title>
 	
 <!--Css Link-->
@@ -71,14 +73,42 @@ $(function() {
 
 	
 	<!--Header 結束-->
+	<!--手機版 header 開始-->
+	<div class="mobile-header">
+		<div class="mobile-header-block" id="header-m">
+			<div id="mobile-header-hb">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div class="mobile-header-main-block" id="mobile-header-main">
+				<a href="index.html">首頁</a>
+				<a href="personal-queena.html">服務團隊</a>
+				<a href="personal-queena.html" class="detail">Queena</a>
+				<a href="javascript:void(0)" class="detail">Alice</a>
+				<a href="javascript:void(0)" class="detail">Colleen</a>
+				<a href="javascript:void(0)" class="detail">Molly</a>
+				<a href="price.html" >服務價格</a>
+		
+		</div>
+		<script type="text/javascript">
+$(document).ready(function(){
+  $("#mobile-header-hb").click(function(){
+    $("#mobile-header-main").toggle(500);}
+  );
+});
+</script>
+	</div>
+	<!--手機版 header 結束-->
 	<!--滿版圖區 開始-->
 	<div class="outline">
 		<div class="mainbanner">
-			<div class="outblock">
+			<div class="outblock max">
 				<div class="mainbanner_block">
 					<div class="sing-word banner"></div>
-					<div class="mainbanner_title">細節妝髮 ｜ 團隊造型</div>
-					<div class="mainbanner_sub">Queena Li Studio 李姮儀細節妝髮整體造型團隊</div>
+					<div class="mainbanner_title">細節妝髮 <span class="media-none upset">｜</span> <br class="media-none">團隊造型</div>
+					<div class="mainbanner_sub">Queena Li Studio <br class="media-none">李姮儀細節妝髮整體造型團隊</div>
 				</div>
 			</div>
 		</div>
@@ -90,7 +120,7 @@ $(function() {
 			<div class="intro_block">
 				<div class="sing-word intro"></div>
 				<div class="intro_title">關於我們 | ABOUTS</div>
-				<div class="intro_word">我們團隊中每一位都是極具美感和貼心負責的專業造型師，我們秉持多年造型經驗的貼心服務，更不忘時代潮流不斷精進自己的技術<br>專業擅長各種風格，滿足任何可能的造型需求並提供給你最合適雋永經典的造型及最貼心的梳化服務</div>
+				<div class="intro_word">我們團隊中每一位都是極具美感和貼心負責的專業造型師，<br class="media-none">我們秉持多年造型經驗的貼心服務，<br>更不忘時代潮流不斷精進自己的技術專業擅長各種風格，<br class="media-none">滿足任何可能的造型需求並提供給你最合適雋永經典的造型及最貼心的梳化服務</div>
 			</div>
 		</div>
 	</div>
@@ -112,7 +142,7 @@ $(function() {
 			<div class="stylist_block">
 				<div class="sing-word intro"></div>
 				<div class="intro_title">團隊介紹 | THE TEAM</div>
-				<div class="intro_word">我們團隊的每位造型人都非常專業且認真負責，讓我們極具美感的造型師們為您創造新的人生</div>
+				<div class="intro_word">我們團隊的每位造型人都非常專業且認真負責，<br class="media-none">讓我們極具美感的造型師們為您創造新的人生</div>
 			</div>
 			<div class="stylist_person_block">
 				<div>
@@ -139,8 +169,10 @@ $(function() {
 	<div class="footer">
 		<div class="outblock">
 			<div class="footer_copy">©2020 The Queenallistuio Company, all rights reserved</div>
-			<div class="footer_social"><img src="img/ig-icon.png" width="27" height="45" alt=""/><div class="word">queenalistudio</div></div>
-			<div class="footer_social"><img src="img/line-icon.png" width="27" height="45" alt=""/><div class="word">queenalistudio</div></div>
+			<div class="footer-social-block">
+			<a href="" class="footer_social"><img src="img/ig-icon.png" width="27" height="45" alt=""/><div class="word">queenalistudio</div></a>
+			<a href="" class="footer_social"><img src="img/line-icon.png" width="27" height="45" alt=""/><div class="word">queenalistudio</div></a>
+			</div>
 	  </div>
 	</div>
 	<!--footer 結束-->
